@@ -122,7 +122,7 @@ function SignupPage() {
                             <FormInput
                                 icon='edit'
                                 label='Password'
-                                type='number'
+                                type='text'
                                 types='password'
                                 className="formcard"
                                 setFormDetails={setFormDetails}
@@ -153,7 +153,7 @@ function SignupPage() {
 
 
                     <div className={styles.submit}>
-                        <button style={{ opacity: isFormValid ? 1 : 0.5, borderRadius: '8px' }}>
+                        <button style={{ opacity: isFormValid ? 1 : 0.5, borderRadius: '8px',padding:'20px',width:'100%',backgroundColor:'#0a1b2a',color:'#fff',fontSize:'18px',fontWeight:'600' }} className={styles.button}>
                             Create your account
                         </button>
                         {isError && <p className={styles.errorText} >{isErrorInfo}</p>}

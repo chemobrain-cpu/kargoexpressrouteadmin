@@ -147,6 +147,10 @@
     justify-content: center;
 }
 
+td{
+    text-align: left;
+}
+
 .homeScreen .timeline .filter .dateFilter button {
     width: 200px;
     padding-top: 12px;
@@ -188,7 +192,7 @@
     padding-bottom:12px;
     width: 200px;
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 
@@ -287,7 +291,7 @@
     width:320px;
     margin-bottom: 25px;
     padding:10px;
-    font-family: Poppins;
+    font-family: ABeeZee;
     font-size: 1rem
 }
 
@@ -377,7 +381,7 @@
 .durationContainer  .button{
     padding:5px 10px 5px 10px;
     border-radius: 20px;
-    font-family: Poppins;
+    font-family: ABeeZee;
     
 }
 
@@ -496,7 +500,7 @@
     height:55px;
     padding:10px;
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     background-color: rgb(58, 59, 85);
     border-radius:7px;
     color:#fff;

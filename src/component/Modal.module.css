@@ -60,7 +60,7 @@
 .modal_heading {
     font-size: 17px;
     font-weight: 300;
-    font-family: poppins;
+    font-family: ABeeZee;
     margin-bottom: 20px;
 }
 
@@ -69,7 +69,7 @@
     align-self: center;
     background-color: rgb(240, 240, 240);
     border-radius: 30px;
-    font-family: poppins;
+    font-family: ABeeZee;
     font-size: 15px;
     padding-top: 12px;
     padding-bottom:12px;
@@ -119,7 +119,7 @@
     background-color: var(--color-blue);
     color: var(--color-background);
     font-size: 1.2rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     border-radius: 30px;
 }
 
@@ -218,7 +218,7 @@
     background-color: var(--color-fade);
     margin-bottom: 15px;
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 .pinmodal_screen .buttonContainer div {

@@ -1,6 +1,6 @@
-/*poppins font import stays here*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*ABeeZee font import stays here*/
 
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 /* declaring and using root variables in css*/
 :root {
     --box-hover-shadow: 10px 8px 5px rgb(218, 218, 218);
@@ -23,7 +23,7 @@
     width:100%;
     color:rgb(100,100,100);
     font-weight: lighter;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +49,7 @@ input:-webkit-autofill:active{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family:Poppins;
+    font-family:ABeeZee;
 }
 
 html {
@@ -59,7 +59,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    font-family: poppins, sans-serif;
+    font-family: ABeeZee, sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;

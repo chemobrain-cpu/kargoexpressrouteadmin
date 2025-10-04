@@ -6,6 +6,8 @@ import { Loader } from '../component/HomeLoader';
 import { useNavigate } from 'react-router-dom';
 import { Error } from "../component/Error";
 import { useSelector } from "react-redux";
+import { MdDelete, MdEdit } from 'react-icons/md';
+
 
 
 
@@ -123,51 +125,32 @@ export const AdminCossignmentsComponent = ({ status }) => {
             <div className={styles.tableContainer} >
 
                  <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                REFERENCE NO
-                            </td>
-                            
-                           
-                            <td>
-                                SHIPPER EMAIL
-                            </td>
+  <thead>
+    <tr>
+      <th>REFERENCE NO</th>
+      <th>SHIPPER EMAIL</th>
+      <th>RECEIVER EMAIL</th>
+      <th><MdDelete title="Delete" /></th>
+      <th><MdEdit title="Edit" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    {cossignmentList.map(data => (
+      <tr key={data._id}>
+        <td>{data.carrier_reference_no}</td>
+        <td>{data.shipper_email}</td>
+        <td>{data.receiver_email}</td>
+        <td onClick={() => deleteHandler(data._id)} >
+          <MdDelete title="Delete" />
+        </td>
+        <td onClick={() => editHandler(data._id)} >
+          <MdEdit title="Edit" />
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
-                            <td>
-                                receiver EMAIL
-                            </td>
-
-                           
-
-                        </tr>
-
-
-                        {cossignmentList.map(data => <tr key={data.__id} >
-                            <td>
-                                {data.carrier_reference_no}
-                            </td>
-                            <td>
-                                {data.shipper_email}
-                            </td>
-
-                            <td>
-                                {data.receiver_email}
-                            </td>
-
-                            <td onClick={() => deleteHandler(data._id)} className={styles.click}>
-                                 delete
-                            </td>
-
-                            <td onClick={() => editHandler(data._id)} className={styles.click}>
-                                edit
-                            </td>
-
-                        </tr>)}
-
-
-                    </tbody>
-                </table>
 
             </div>
 

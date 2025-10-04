@@ -60,7 +60,7 @@ const AdminCreateCossignment = ({ status }) => {
             <div className={styles.main}>
                 {/*mobile and dashboard headers*/}
                 <DashboardDrawer showmenuHandler={showmenuHandler} />
-                <DashboardHeader showmenuHandler={showmenuHandler} headerTitle='New Cossignment' />
+                <DashboardHeader showmenuHandler={showmenuHandler} headerTitle='New Shippment' />
                 <AdminCosignmentCreateComponent updateHandler={updateHandler} />
             </div>
             

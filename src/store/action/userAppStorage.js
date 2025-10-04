@@ -138,7 +138,7 @@ export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/adminlogin`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/adminlogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -199,7 +199,7 @@ export const signupAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/adminsignup`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -276,7 +276,7 @@ export const fetchCossignments = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/cosignments`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/cosignments`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -327,7 +327,7 @@ export const deleteCossignment = (id)=>{
     } = getState().userAuth
 //
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/cosignments/${id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/cosignments/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -376,7 +376,7 @@ export const updateCossignment = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/cosignments/${data._id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/cosignments/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -429,7 +429,7 @@ export const createCossignment = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/cosignment`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/cosignment`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -489,7 +489,7 @@ export const fetchHistories = (id)=>{
   
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/histories/${id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/histories/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -540,7 +540,7 @@ export const deleteHistory = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/history/${id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/history/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -589,7 +589,7 @@ export const updateHistory = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/histories/${data._id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/histories/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -640,7 +640,7 @@ export const createHistory = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/history`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/history`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -695,7 +695,7 @@ export const updateAdmin = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/admin/${data._id}`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -742,9 +742,9 @@ export const updateAdmin = (data)=>{
   }
 }
 
-//https://track-admin-backend.onrenderll.com
+//https://track-admin-backend.onrender.com
 
-//https://kargoexpressroute.onrender.com
+//https://track-admin-backend.onrender.com
 
 export const sendEmail = (data)=>{
   return async (dispatch, getState) => {
@@ -752,7 +752,7 @@ export const sendEmail = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://kargoexpressroute.onrender.com/sendemail`, {
+      let response = await fetch(`https://track-admin-backend.onrender.com/sendemail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
